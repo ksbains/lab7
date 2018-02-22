@@ -10,6 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('.likeCtr').click(googleAnalytics);
+	$('.likeBtn').click(googleAnalytics);
 }
 
 function googleAnalytics(e){
