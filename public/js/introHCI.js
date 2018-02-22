@@ -12,6 +12,7 @@ function initializePage() {
 	// your code here
 }
 function googleAnalytics(){
+	console.log("the like uitton has been pressed");
 	ga("send", "event", 'like', 'click');	
 }
 
