@@ -9,10 +9,13 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// your code here
+	$('.likeCtr').click(googleAnalytics);
 }
-function googleAnalytics(){
+
+function googleAnalytics(e){
+	e.preventDefault();
 	console.log("the like uitton has been pressed");
+	ga('create', 'UA-114605567-1', 'auto');
 	ga("send", "event", 'like', 'click');	
 }
 
